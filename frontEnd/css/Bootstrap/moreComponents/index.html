@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap components</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="display-1 text-info text-center">More components</h1>
+    <h2 class="display-4">Badges</h2>
+    <p>Works as a kind of notification can be added to anything through a span. They scale depending on the parent
+      element, we can also made them round with the badge and badge-pill classes
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge badge-light">4</span>
+      </button>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge badge-danger badge-pill">4</span>
+      </button>
+    </p>
+    <h2 class="display-4">Button Group</h2>
+    <p>Wrap a series of buttons with .btn in .btn-group. </p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-success">Button 1</button>
+      <button type="button" class="btn btn-warning">Button 2</button>
+      <button type="button" class="btn btn-danger">Button 3</button>
+    </div>
+
+    <h2 class="display-4">Alerts</h2>
+    <p>Alert component allow us notify something to the user</p>
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <h3 class="alert-heading">Oh no...</h3>
+      Danger! the world will end if you push the red button
+    </div>
+    <!-- alert-dismissible fade show are only to add style-->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h3 class="alert-heading">Dismisable alert</h3>
+      <p>This button can delete the alert
+        <!-- with data-dismiss="alert" we can already close the alert -->
+        <button aria-label="Close" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- Scripts must be at the bottom of our body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

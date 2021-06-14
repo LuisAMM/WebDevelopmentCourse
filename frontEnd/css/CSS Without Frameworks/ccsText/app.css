@@ -1,0 +1,57 @@
+h1{
+  /* Aling the text inside the box */
+  text-align: center;
+  /* text decoration controls the 
+  apperance of decorative lines in text */
+  text-decoration: #8f6b07 line-through dotted;
+  /* could be overline, line-through, etc (mdn) */
+  /* we can also specify the color of the line with 
+  the first parameter*/
+  /* we can also modify the type of line to wavy, dotted */
+  letter-spacing: 10px;
+  /* modify the spacing between letters */
+
+}
+
+p{
+  text-align: justify;
+  font-weight: normal; 
+  /* how bold the font it is
+  from 100 to 900, being 900 the boldest
+  not every font have all the values 
+  we can also use normal(400), 
+  bold(700), extrabold(900) 
+  if we choose a value that's not available 
+  the browser will choose the closest one*/
+
+  line-height: 2;
+  /* modify the space between lines of text */
+}
+
+/* font sizes can be represented in a lot of ways
+like: pixels, text, em, percentages, global values :(*/
+
+/* we will start with pixels px
+px it's an absolute unit
+not recommended for responsive websites */
+
+h2{ 
+  font-size: 80px;
+}
+
+/* font-family it's what we use to 
+change the font of an element */
+
+/* depends of the font's included in our browser
+until we learn how to install our custom font*/
+
+/* we can define backups fonts in case our 
+preferred one it's not available*/
+
+/* if any of the options it's available we 
+can set up a default font family like sans-serif,
+ serif, monospaced, Fantasy...*/
+
+body{
+  font-family: 'Segoe UI', Ubuntu, monospace;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reddit</title>
+</head>
+
+<body>
+  <h1>Searching</h1>
+  <h2>Reddit search</h2>
+  <form action="https://www.reddit.com/search">
+    <!-- The name of the input must be "q" in order to work because reddit server expect a "q" as a name for the queries -->
+    <label for="q1">Insert reddit query: </label>
+    <input type="text" name="q" id="q1">
+    <button>Submit</button>
+  </form>
+  <h2>Google Search</h2>
+  <form action="https://www.google.com/search">
+    <label for="q2">Insert google query</label>
+    <input type="text" name="q" id="q2">
+    <button>Submit</button>
+  </form>
+  <h2>Youtube Search</h2>
+  <form action="https://www.youtube.com/results">
+    <label for="q3">Insert youtube query</label>
+    <input type="text" name="search_query" id="q3">
+    <button>Submit</button>
+  </form>
+
+</body>
+
+</html>

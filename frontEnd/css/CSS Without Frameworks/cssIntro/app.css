@@ -1,0 +1,31 @@
+h2{
+  color: indigo;
+  /* color can receive colors in multiple ways 
+  color: #00ff00;
+  color: rgb(0,255,0);
+  color: search on mdn 
+  */
+  background-color: blueviolet;
+}
+
+button{
+  color: magenta;
+  /* background receive colors the same way as colors property */
+  background-color: rgb(89,151,0);
+}
+
+p{
+  /* we can represent #00aaff 
+  we can compact them in #0af */
+  color: olive;
+}
+
+h1{
+  /* we can search this colors on a color picker online */
+  color: #aa01ff;
+  background-color: rgb(0, 128, 128);
+}
+
+body{
+  background-color: crimson;
+}

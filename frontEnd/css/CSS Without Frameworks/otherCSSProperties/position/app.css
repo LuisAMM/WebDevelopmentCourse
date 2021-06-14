@@ -1,0 +1,67 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Static it's the default position 
+every element it's set as */
+#middle{
+  background-color: greenyellow;
+}
+
+#static #middle{
+  position: static;
+  top: 100px;
+} 
+
+/* shift the element 100 pixels
+from the top relative to it's original
+position can be positive or negative
+*/
+
+#relative #middle{
+  position: relative;
+  top: 80px;
+  left: 100px;
+}
+
+/* Absolute -> the element it's removed from the 
+document flow and no space it's created 
+for the element
+
+if it have an ancestor with a position
+attribute configured the element will 
+change relatively to that ancesor. If
+there is none, will take the body of the 
+html as the ancestor
+*/
+
+/* if we leave it like this will take
+the html body as the ancesor */
+#absolute #middle{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* if we add this will take the section 
+as the ancestor */
+
+#absolute{
+  position: relative;
+}
+
+/* Fixed -> Will always be present at
+0,0 in the document no matter how much 
+we descend in the website
+ */
+
+#fixed #middle{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}

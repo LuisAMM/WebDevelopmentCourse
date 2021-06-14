@@ -1,0 +1,141 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 6em;
+  text-align: center;
+}
+
+nav{
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul,li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  /* border: 1px solid red; */
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* at exactly 800px 
+this media query will apply */
+/* @media(width: 800px){
+  h1{
+    color: purple;
+  }
+} */
+
+/* At 801pixel and onward this
+media query will aplly */
+/* @media(min-width: 801px){
+  h1{
+    color: red;
+  }
+} */
+
+/* at 799px and below this 
+media query will apply */
+/* @media(max-width: 799px){
+  h1{
+    color: aqua;
+  }
+} */
+
+/* Range between 600px and 799px */
+/* @media(min-width: 600px) and (max-width: 799px){
+  h1{
+    color:green;
+  }
+} */
+
+/* Another approach it's to set the 
+max lenght of the screen and set 
+different rules */
+
+/* The problem it's that we must 
+be careful with the order
+bigger size first then smaller*/
+/* @media(max-width: 1500px){
+  h1{
+    color:blue;
+  }
+}
+
+@media(max-width: 1000px){
+  h1{
+    color:green;
+  }
+}
+
+@media(max-width: 600px){
+  h1{
+    color:coral;
+  }
+} */
+
+/* another approach it's to define 
+a default value and change it with
+the min-lenght property*/
+
+/* Again, the order matter */
+
+h1{
+  color: red;
+}
+
+@media(min-width: 600px){
+  h1{
+    color: blue;
+  }
+}
+
+@media(min-width: 1000px){
+  h1{
+    color: green;
+  }
+}
+
+@media(min-width: 1500px){
+  h1{
+    color:coral;
+  }
+}
+
+/* Reducing the size of the font-size for smaller screens */
+
+@media(max-width:768px){
+  h1{
+    font-size: 4em;
+  }
+  nav, nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 
+  we can combine these two in just one
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  } */
+}
+
+@media(max-width:576px){
+  h1{
+    font-size: 3em;
+  }
+}
+

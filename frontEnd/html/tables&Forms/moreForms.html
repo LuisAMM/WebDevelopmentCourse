@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radio buttons, checkboxed and selects</title>
+</head>
+
+<body>
+  <h1>More inputs</h1>
+  <!-- radio options -->
+  <form action="/birds">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="">I agree on everything</label>
+    <p>
+      <input type="radio" name="size" id="s" value="s">
+      <label for="s">S:</label>
+      <input type="radio" name="size" id="m" value="m">
+      <label for="m">M:</label>
+      <input type="radio" name="size" id="l" value="l">
+      <label for="l">L:</label>
+    </p>
+
+    <!-- Dropdown menus -->
+    <label for="meal">Please select a meal type:</label>
+    <select name="meal" id="meal">
+      <option value="">--Please choose an option--</option>
+      <option value="fish">Fish</option>
+      <!-- if we use an selected attribute it will be selected by default -->
+      <option value="veg" selected>Vegetarian</option>
+      <option value="steak">Steak</option>
+    </select>
+
+    <p>
+      <label for="cheese">Amount of cheese</label>
+      <input type="range" name="cheese_level" id="cheese" max="100" min="1" step="5" value=75>
+    </p>
+
+    <p>
+      <label for="num">Enter a number:</label>
+      <input type="number" name="num" id="num" max="1000" min="1" step="2">
+    </p>
+
+    <p>
+      <label for="request">Any speacial request?</label>
+      <br>
+      <textarea name="request" id="request" cols="30" rows="10" placeholder="Type any request here"></textarea>
+    </p>
+    <button>Submit</button>
+  </form>
+</body>
+
+</html>
+

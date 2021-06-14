@@ -1,0 +1,67 @@
+.circle{
+  height: 150px;
+  width: 150px;
+  background-color: magenta;
+  /* this property provide a way to
+  control the animation speed
+  when changing css properties */
+  transition: background-color 2s 1s;
+}
+/* Inside a transition we can also 
+specify only 1 property to change 
+in this case we specified the 
+background color 
+  transition: background-color 2s;
+  -------------------------------
+Inside a transition we can also 
+specify a delay. This will wait until
+the delay (1s) end in order to begin 
+the transition of the background
+  transition: background-color 2s 1s;
+(if we want all, we can set all 
+instead of background color)
+  transition: all 2s 1s;
+(if we want to have different times
+between properties we can set them with)
+  transition background-color 1s; border-radius 2s;
+ -------------------------------
+
+  inside a transition we can also 
+  specify
+*/
+
+.circle:hover{
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+section div{
+  height: 100px;
+  width: 100px;
+  background-color: turquoise;
+  margin: 20px 0;
+  transition: margin-left 3s;
+}
+
+section:hover div{
+  margin-left: 500px;
+}
+
+
+/* timing function it's another property 
+of the transition attribute. timing function 
+allow us to change the way that the element
+move in those 3 seconds*/
+
+div:nth-of-type(1){
+  transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+  transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+  transition-timing-function: cubic-bezier(0.7,0,0.84,0);
+}
+div:nth-of-type(4){
+  transition-timing-function: cubic-bezier(0.85,0,0.15,1);
+} 

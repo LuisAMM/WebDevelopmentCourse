@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Basics</title>
+  <!-- Bootstrap must be before our stylesheet -->
+  <!-- In order to not override our app.css styles -->
+  <!-- for a real world application we must download the stylesheet and included bc the link can change -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+  <!-- Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint. -->
+  <div class="container">
+    <h1>I'm a container</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore quaerat nam dicta soluta, velit
+      voluptatum earum sed obcaecati explicabo repellendus, sequi impedit doloremque architecto fugiat accusamus
+      molestiae
+      illum consequuntur ipsum quidem quasi. Molestias consectetur quaerat porro, nemo iusto adipisci ut atque iste
+      voluptate suscipit voluptatem quae alias sapiente doloribus?</p>
+  </div>
+
+  <!-- Use .container-fluid for a full width container, spanning the entire width of the viewport. -->
+  <div class="container-fluid">
+    <h2>I'm a container-fluid</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, nesciunt harum, iure et mollitia quis
+      cupiditate amet soluta temporibus pariatur nostrum consequatur magni hic autem sit? Eaque velit voluptatibus,
+      libero nemo dignissimos assumenda ipsam asperiores ea impedit dolor, temporibus voluptatum odit cum repudiandae
+      tenetur ad, esse nesciunt aliquid iure eos!</p>
+  </div>
+
+  <!-- They allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is 100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, and xl. -->
+  <div class="container-sm">
+    <h2>container-sm</h2>
+    <p><strong>100% wide until small breakpoint</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, voluptates
+      minus. Officiis ducimus voluptate quae eveniet veritatis explicabo blanditiis quaerat laboriosam optio placeat
+      deleniti repudiandae odio, ipsa ullam. Aspernatur, deserunt! Accusamus porro, quidem rem non incidunt facilis
+      excepturi consequuntur quod. Consectetur consequuntur dignissimos maxime tempora eaque, veniam sunt cupiditate
+      tenetur?</p>
+  </div>
+  <div class="container-md">
+    <h2>container-md</h2>
+    <p><strong>100% wide until medium breakpoint</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, voluptates
+      minus. Officiis ducimus voluptate quae eveniet veritatis explicabo blanditiis quaerat laboriosam optio placeat
+      deleniti repudiandae odio, ipsa ullam. Aspernatur, deserunt! Accusamus porro, quidem rem non incidunt facilis
+      excepturi consequuntur quod. Consectetur consequuntur dignissimos maxime tempora eaque, veniam sunt cupiditate
+      tenetur?</p>
+  </div>
+  <div class="container-lg">
+    <h2>container-lg</h2>
+    <p><strong>100% wide until large breakpoint</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, voluptates
+      minus. Officiis ducimus voluptate quae eveniet veritatis explicabo blanditiis quaerat laboriosam optio placeat
+      deleniti repudiandae odio, ipsa ullam. Aspernatur, deserunt! Accusamus porro, quidem rem non incidunt facilis
+      excepturi consequuntur quod. Consectetur consequuntur dignissimos maxime tempora eaque, veniam sunt cupiditate
+      tenetur?</p>
+  </div>
+  <div class="container-xl">
+    <h2>container-xl</h2>
+    <p><strong>100% wide until extra large breakpoint</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, voluptates
+      minus. Officiis ducimus voluptate quae eveniet veritatis explicabo blanditiis quaerat laboriosam optio placeat
+      deleniti repudiandae odio, ipsa ullam. Aspernatur, deserunt! Accusamus porro, quidem rem non incidunt facilis
+      excepturi consequuntur quod. Consectetur consequuntur dignissimos maxime tempora eaque, veniam sunt cupiditate
+      tenetur?</p>
+  </div>
+
+
+  <!-- Scripts must be at the bottom of our body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

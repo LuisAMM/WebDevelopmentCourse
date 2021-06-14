@@ -1,0 +1,217 @@
+/* Select everything on the document */
+/* not recommended */
+/* * {
+  background-color: #E9FFF9;
+} */
+/* better */
+body{
+  background-color: #E9FFF9;
+}
+/* selector by element h1,h2,p,... */
+button{
+  font-size: 30px;
+  background-color: #9ED8DB;
+}
+
+/* combine element selectors */
+h1,h2{
+  color: #1D3354;
+}
+
+/* Id selector, select one 
+element by ID */
+
+#signup{
+  background-color: #467599;
+  color: #E9FFF9;
+}
+
+/* Class selector, 
+select multiple elements by 
+attached them a class*/
+
+span{
+  color: #2a9d8f;
+}
+
+/* class selector to several spans 
+and could be applied to other elements
+not only spans */
+
+.tag{
+  background-color: #e9c46a;
+  color: #e63946;
+  font-size: 16px;
+}
+
+/* descendant selector 
+something inside something 
+with out comma */
+
+/* Change all the anchor tags 
+inside  of a span (Only the anchor)*/
+/* span a{
+  color: #2a9d8f;
+} */
+
+/* we could be more specific */
+
+.post a{
+  color: #2a9d8f;
+}
+
+footer a{
+  color:#e63946;
+}
+
+/* adjencent selector */
+/* elem1 + elem2 {} */
+/* select only the elem2 that are
+preceded by an elem1 */
+
+input + button{
+  background-color: pink;
+}
+
+h2 + button{
+  font-size: 20px;
+}
+
+/* Direct Child*/
+/* elem1 > elem2 {}*/
+/* select only the elem2s that 
+are direct children of a elem1 
+element*/
+
+footer > a{
+  color: #2d6a4f;
+}
+
+/* attribute selector */
+/* elem1[attrib="value"]{}*/
+
+/* select all elem1 where 
+the attribute attrib 
+is set to "value"*/
+
+input[type="password"]{
+  color: greenyellow;
+}
+
+/* we can also use other type of search */
+/* this selector will search for
+any anchor tag that contains the word 
+google */
+
+/* THIS TYPE OF SEARCH DO NOT 
+ONLY APPLY TO HREF*/
+a[href*="google"]{
+  color: magenta;
+}
+
+/* any anchor tag that end in .org */
+a[href$=".org"]{
+  color: grey;
+}
+
+/*************PSEUDO CLASSES ***********/
+
+/* :hover will change the behaviour of 
+an element when it's hovered */
+
+.post button:hover{
+  background-color: #e63946;
+  color: #E9FFF9;
+}
+
+/* more specific */
+
+/* .post button:hover{
+  background-color: #e9c46a;
+  color: #1D3354;
+} */
+
+a:hover{
+  text-decoration:line-through;
+}
+
+/* :active pseudo class */
+/* when I activate an element
+like click an anchor it will change */
+/* in this example a button */
+
+.post button:active{
+  background-color: #2d6a4f;
+}
+
+.post{
+  background-color: #dfe8dc;
+}
+/* :nth-of-type(#number) */
+
+/* select the 3rd one in the class */
+
+/* .post:nth-of-type(3){
+  background-color: red;
+} */
+
+/* if i want to select every 
+3rd post i can use 3n */
+
+.post:nth-of-type(3n):hover{
+  background-color: red;
+}
+
+/* PSEUDO ELEMENTS */
+/* modify parts of the elements */
+
+/* 
+::after
+::before
+::first-letter
+::first-line
+::selection
+*/
+
+/* first-letter */
+/* select the first letter of one element */
+
+h2::first-letter{
+  font-size: 50px;
+}
+
+/* first-line */
+/* select the firstline of text on an element */
+
+p::first-line{
+  color:#e63946;
+}
+
+/* selection */
+/* select the paragraph 
+that are selected by 
+the user */
+
+/* we can also applied 
+to the entire document by
+removing p*/
+::selection{
+  background-color: #e9c46a;
+}
+
+/* This is set up above
+
+.post button:hover{
+  background-color: #e63946;
+  color: #E9FFF9;
+}
+
+*/
+button:hover{
+  background-color: olive;
+}
+
+/* Both are afecting the hover
+button but one is more specific 
+than the other and thats how the 
+browser decide which to use */

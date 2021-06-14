@@ -1,0 +1,103 @@
+section{
+  background-color: grey;
+  width: 400px;
+  height: 400px;
+}
+
+div{
+  background-color: pink;
+  width: 50%; /*of the parent*/
+  height: 70%; 
+}
+
+h1{
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%; /*of the font size*/
+}
+
+/* 
+Changing only the article will change 
+automatically all the children elements
+*/
+
+#ems{
+  font-size: 15px;
+}
+
+/* In the case of the margin, 
+the relative unit refers to 
+the size of the current content 
+the current font-size of the h2 it's 
+h2 -> 2em=40px then in the margin
+margin -> 1em=40px
+*/
+#ems h2{
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+#ems h3{
+  font-size: 1.5em;
+}
+
+#ems p{
+  font-size: 1em;
+}
+
+/* 
+Everything it's static
+button{
+  font-size: 30px;
+  padding: 0 30px;
+  border-radius: 15px;
+  background-color: #2d6a4f;
+  color: white;
+} */
+
+button{
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #2d6a4f;
+  color: white;
+}
+
+/* I just want to increase 
+the size of the ul by 1.5
+
+the problem? I have nested ul's
+and it will grow larger and larger
+because the parents are bigger each time*/
+
+#ems ul{
+  font-size: 1.5em ;
+}
+
+/*Using rems rems are relative to the 
+root document this way we don't have 
+the increasing effect*/
+
+#rems h2{
+  font-size: 3rem;
+}
+
+#rems h3{
+  font-size: 2rem;
+}
+
+#rems ul{
+  font-size: 0.8rem;
+}
+
+#rems button{
+  font-size: 1.5rem;
+}
+
+/* In order to change the root element 
+
+And change the root element modify all the rems
+*/
+html{
+  font-size: 30px;
+}

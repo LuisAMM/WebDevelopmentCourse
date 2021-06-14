@@ -1,0 +1,19 @@
+section{
+  height: 800px;
+  width: 80%;
+  /* background-image: url("https://images.unsplash.com/photo-1614069553820-342a63ef93a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80");
+  background-size: cover; /*cover, etc etc*/
+  /* background-repeat: ; */
+/*  background-position: left;
+  in shorthand we can use background */
+  background: no-repeat url("https://images.unsplash.com/photo-1614069553820-342a63ef93a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80") center/cover;
+  /* The bg size must be in after the position with a / 
+  otherwise will break. we can specify multiple images
+  with a comma separator*/
+  margin: 0 auto;
+}
+
+h1{
+  color: white;
+  font-size: 100px;
+}

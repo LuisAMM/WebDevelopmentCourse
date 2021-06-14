@@ -1,0 +1,37 @@
+/* 
+Alpha channel 
+govern how transparent it's a color
+rgba(red, green, blue, alpha)
+alpha goes from 0 (transparent) to 1 (solid)
+*/
+
+section{
+  width: 500px;
+  height: 500px;
+  background-color: magenta;
+}
+
+#rgba{
+  width: 50%;
+  height: 50%;
+  /* I can also set it up with hexadecimal numbers
+  but I must add 2 numbers at the end which represent
+  the alpha channel
+  background-color: #ac9d8f00 ->Full transparency
+  background-color: #ac9d8fff ->No transparency
+  */
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* opacity it's similar to the alpha channel
+except that govern the transparency of all the
+elements (including it's childrens)
+opacity: 0 -> transparent
+opacity: 1 -> solid*/
+
+#opacity{
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  opacity: 0.5;
+}

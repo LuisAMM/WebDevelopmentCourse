@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Value</title>
+</head>
+
+<body>
+  <!-- we want to remove as much logic as we can from the templates -->
+  <!-- usually we will send the data directly from the server -->
+  <h1>Passing data to templates</h1>
+  <!-- rand it's defined and send it to this view on the js-->
+  <h2>Random number : <%= rand %>
+  </h2>
+
+  <!-- conditionals on ejs <% %> anything between these tags will be evaluated as js code BUT nothing will be showed-->
+
+  <% if(rand%2===0){ %>
+    <h3><%= rand%> it's an even number</h3>
+  <% }else{ %>
+    <h3><%= rand%> it's an odd number</h3>
+  <% } %>
+</body>
+
+</html>

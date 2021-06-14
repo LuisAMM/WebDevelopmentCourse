@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./app.css">
+  <title>Bootstrap Forms</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="display-2">Forms</h1>
+    <form action="#nowhere">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- the form group class does not do much just adding some margin -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <!-- The form control class modifies the style of our form -->
+            <!-- we can modify form control to make it bigger or smaller -->
+            <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control form-control-sm" id="password" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Street Address</label>
+        <input type="text" name="address" placeholder="Via Roberto Ardigo 157" class="form-control" id="address">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" name="city" placeholder="Padua" class="form-control" id="city">
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="form-group">
+            <label for="exampleSelect1">Select a State</label>
+            <select name='state' class="form-control" id="exampleSelect1">
+              <option value="BNS">Barinas</option>
+              <option value="DC">Distrito Capital</option>
+              <option value="BOL">Bolivar</option>
+              <option value="MCY">Maracay</option>
+              <option value="VAL">Valencia</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="form-group">
+            <label for="zipCode">Zip Code</label>
+            <input type="text" name="zipcode" placeholder="01055" class="form-control" id="zipCode">
+          </div>
+        </div>
+      </div>
+      <!-- check boxes are difficult to customize. but we can find some on bootstrap's website -->
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1"> Sign me up default</label>
+        </div>
+      </div>
+
+      <!-- cutomized checkbox -->
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1"> Sign me up customized</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Register</button>
+    </form>
+  </div>
+
+  <!-- Scripts must be at the bottom of our body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* margin and width are ignored 
+on inline elements 
+padding will only work on the 
+horizontal line
+display can solve this issue
+can change the inline and block attribute 
+into:
+ -inline : the element it's in the same line as other elements 
+ -block : the element creates a new line only for it
+ -inline-block: the element it's inline but the padding margin etc
+ works on it.
+  -none: hide the element
+*/
+
+span{
+  background-color: palevioletred;
+  border: 1px solid black;
+  width: 500px;
+  padding: 100px;
+}
+
+h1{
+  background-color: palegreen;
+  border: 1px solid black;
+  width: 300px;
+  padding: 50px;
+  margin: 100px;
+  /* display: none; */
+}
+
+div{
+  height: 200px;
+  width: 200px;
+  background-color: olive;
+  border: 5px solid black;
+  display: inline-block;
+  margin: 50px;
+}

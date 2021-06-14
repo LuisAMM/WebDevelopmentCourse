@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>Forms demo</h1>
+  <form action="/tacos/">
+    <p>
+      <label for="username">Enter a Username: </label>
+      <input type="text" placeholder="Username" id="username" name="username">
+    </p>
+    <p>
+      <label for="password">Enter your Password: </label>
+      <input type="password" placeholder="Password" id="password" name=password>
+    </p>
+    <p>
+      <label for="color">Choose a color:</label>
+      <input type="color" id="color" name="color">
+    </p>
+    <p>
+      <label for="month">Choose a month</label>
+      <input type="month" id="month" name="month">
+    </p>
+    <!-- Alternative way, less common -->
+    <p>
+      <label>
+        Enter a Number:
+        <input type="number" placeholder="Enter a number" name="number">
+      </label>
+    </p>
+    <!-- if the button it's in the form, it will submit the form when it's pressed (by default) -->
+    <button>Submit</button>
+    <!-- if I want a button that do not submit the form inside of a form I can use <button type="button">this button does not submit the form</button> -->
+    <!-- Generate a button to submit a form with an input element we can only change the name through the attribute value -->
+    <input type="submit" value="Click me">
+  </form>
+</body>
+
+</html>

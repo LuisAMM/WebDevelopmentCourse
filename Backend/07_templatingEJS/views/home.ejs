@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root View</title>
+</head>
+<body>
+  <!-- in order to let ejs know that the following text it's not html we use tags -->
+  <!-- 1st tag <%= %>  inside this anything we write will be js-->
+  <!-- only the output value of whats inside the tags will be outputted -->
+  <h1>Welcome to root <%= 1 + 2 %> instead of 1 + 2 </h1>
+  <ul>
+    <li><a href="/r/something">/r/something</a> you will find a demo of subreddit</li>
+    <li><a href="/random">/random</a> you will find the < % and < %= ejs tags</li>
+    <li><a href="/cats">/cats</a> You will find a loop example on ejs</li>
+  </ul>
+</body>
+</html>
